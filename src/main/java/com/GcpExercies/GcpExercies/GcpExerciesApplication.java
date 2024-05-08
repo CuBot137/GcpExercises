@@ -17,5 +17,6 @@ public class GcpExerciesApplication {
 	public String handleGetRequest() {
 		return "Hello from Cloud Function! (Responding to a GET request)";
 	}
+	// test
 
 }
