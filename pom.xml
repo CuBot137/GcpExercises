@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.GcpExercies</groupId>
-	<artifactId>GcpExercies</artifactId>
+	<artifactId>GcpExercises</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>GcpExercies</name>
 	<description>GcpExercies to expand my knowledge </description>
