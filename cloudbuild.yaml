@@ -5,7 +5,8 @@ steps:
       - functions
       - deploy
       - function-http
-      - --region=europe-west4
+      - --region=us-central1
       - --source=.
       - --trigger-http
-      - --runtime=RUNTIME
+      - --runtime=java17
+      - --entry-point com.GcpExercies.GcpExercies.Ex1.HttpFunctions
