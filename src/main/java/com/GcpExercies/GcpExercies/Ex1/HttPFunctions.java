@@ -35,7 +35,6 @@ public class HttPFunctions implements HttpFunction {
             default:
                 responseMessage = "Unsupported HTTP method: " + method;
         }
-
         writer.write(responseMessage);
     }
 }

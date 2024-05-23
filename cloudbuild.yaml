@@ -9,4 +9,4 @@ steps:
       - --source=.
       - --trigger-http
       - --runtime=java17
-      - --entry-point com.GcpExercies.GcpExercies.Ex1.HttpFunctions
+      - --entry-point com.GcpExercies.GcpExercies.Ex1.CronFunctions
