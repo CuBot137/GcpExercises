@@ -4,9 +4,9 @@ steps:
       - gcloud
       - functions
       - deploy
-      - function-http
+      - pubsubFunky
       - --region=us-central1
       - --source=.
-      - --trigger-http
+      - --trigger-topic
       - --runtime=java17
-      - --entry-point com.GcpExercies.GcpExercies.Ex1.CronFunctions
+      - --entry-point com.GcpExercies.GcpExercies.Ex1.PubSubFunction
