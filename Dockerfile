@@ -5,6 +5,6 @@ COPY src ./src
 RUN mvn clean package -DskipTests
 
 FROM eclipse-temurin:17.0.11_9-jre-focal
-COPY --from=builder /app/target/GcpExercies-0.0.1-SNAPSHOT.jar app.jar
+COPY --from=builder /app/target/GcpExercises-0.0.1-SNAPSHOT.jar app.jar
 EXPOSE 8080
 ENTRYPOINT ["java","-jar","/app.jar"]

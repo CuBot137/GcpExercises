@@ -29,6 +29,16 @@
 	</dependencyManagement>
 	<dependencies>
 		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.10.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.cloud</groupId>
+			<artifactId>google-cloud-storage</artifactId>
+			<version>2.39.0</version>
+		</dependency>
+		<dependency>
 			<groupId>com.google.cloud</groupId>
 			<artifactId>spring-cloud-gcp-starter-pubsub</artifactId>
 			<version>5.3.0</version>
@@ -72,7 +82,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-					<outputDirectory>target/deploy</outputDirectory>
+<!--					<outputDirectory>target/deploy</outputDirectory>-->
 				</configuration>
 				<dependencies>
 					<dependency>
@@ -87,7 +97,7 @@
 				<artifactId>function-maven-plugin</artifactId>
 				<version>0.11.0</version>
 				<configuration>
-					<functionTarget>functions.PubSubFunction</functionTarget>
+					<functionTarget>functions.PubSubStorageFunction</functionTarget>
 				</configuration>
 			</plugin>
 			<plugin>

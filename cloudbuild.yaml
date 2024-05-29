@@ -7,6 +7,6 @@ steps:
       - pubsubFunky
       - --region=us-central1
       - --source=.
-      - --trigger-topic
+      - --trigger-topic=my-topic
       - --runtime=java17
-      - --entry-point com.GcpExercies.GcpExercies.Ex1.PubSubFunction
+      - --entry-point com.GcpExercies.GcpExercies.Ex4.PubSubStorageFunction
