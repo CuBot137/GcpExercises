@@ -4,7 +4,7 @@ steps:
       - gcloud
       - functions
       - deploy
-      - pubsubFunky
+      - ex4
       - --region=us-central1
       - --source=.
       - --trigger-topic=my-topic

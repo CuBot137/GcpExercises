@@ -5,14 +5,17 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Map;
+import java.io.Serializable;
+
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class PubSubMessage {
-    private String data;
-    private Map<String, String> attributes;
-    private String messageId;
-    private String publishTime;
+public class PubSubBody implements Serializable {
+
+    private PubSubMessage message;
+
+    public PubSubMessage getMessage() {
+        return message;
+    }
 }
