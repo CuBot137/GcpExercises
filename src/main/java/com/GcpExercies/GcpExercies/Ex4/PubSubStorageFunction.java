@@ -4,7 +4,6 @@ import com.google.cloud.functions.CloudEventsFunction;
 import com.google.gson.Gson;
 import io.cloudevents.CloudEvent;
 import org.springframework.stereotype.Component;
-
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 import java.util.logging.Logger;
