@@ -1,8 +1,9 @@
-# GcpExercise 1
+# GcpExercise 3
 Google Cloud Functions are blocks of code that are designed to serve a specific purpose.
 They are lightweight, serverless and cost-effective.
 
-In this example I created a function that is triggered by pub/sub. When a message is sent to the topic, function is triggered and logs the message. 
+In this example I created a function that is triggered by pub/sub. 
+When a message is sent to the topic, function is triggered and logs the message. 
 
 ## cloudbuild.yaml
 steps:

@@ -18,6 +18,7 @@ import com.GcpExercies.GcpExercies.Ex5.model.PubSubMessage;
 import com.GcpExercies.GcpExercies.Ex5.utils.Utils;
 import com.google.gson.Gson;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 import org.springframework.context.annotation.Bean;
@@ -35,6 +36,10 @@ public class BigQueryFunction{
     private StorageHandler storageHandler;
     @Autowired
     private BigQueryHandler bqHandler;
+
+    public static void main(String[] args) {
+        SpringApplication.run(BigQueryFunction.class, args);
+    }
 
     @Bean
     public Consumer<PubSubMessage> pubSubFunction(){
